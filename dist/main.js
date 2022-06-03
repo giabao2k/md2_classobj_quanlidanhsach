@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Book_1 = require("./Book");
+const BookManager_1 = require("./BookManager");
+let bookManager = new BookManager_1.BookMannager();
+let book1 = new Book_1.Book('js', '20A');
+let book2 = new Book_1.Book('c', '30A');
+let book3 = new Book_1.Book('ABC', '22');
+let book4 = new Book_1.Book('BCD', '1');
+bookManager.add(book1);
+bookManager.add(book2);
+bookManager.add(book3);
+bookManager.add(book4);
+bookManager.update('20A', 'JS');
+console.log(bookManager);
